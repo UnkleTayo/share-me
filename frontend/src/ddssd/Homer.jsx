@@ -2,13 +2,11 @@ import React, { useState, useRef, useEffect } from 'react'
 import { HiMenu } from 'react-icons/hi'
 import { AiFillCloseCircle } from 'react-icons/ai'
 import { Link, Route, Routes } from 'react-router-dom'
+
+import { Sidebar, UserProfile } from '../componentss'
 import { userQuery } from '../utils/data'
-
-import { Sidebar, UserProfile } from '../components'
-import Pins from './Pins'
-
 import { client } from '../client'
-
+import Pins from './Pins'
 import logo from '../assets/logo.png'
 
 const Home = () => {
@@ -77,6 +75,31 @@ const Home = () => {
       </div>
     </div>
   )
+}
+
+const Home = () => {
+  // const [toggleSidebar, setToggleSidebar] = useState(false)
+  // const [user, setUser] = useState()
+  // const scrollRef = useRef(null)
+
+  // const userInfo =
+  //   localStorage.getItem('user') !== 'undefined'
+  //     ? JSON.parse(localStorage.getItem('user'))
+  //     : localStorage.clear()
+
+  // useEffect(() => {
+  //   const query = userQuery(userInfo?.googleId)
+
+  //   client.fetch(query).then((data) => {
+  //     setUser(data[0])
+  //   })
+  // }, [userInfo?.googleId])
+
+  // useEffect(() => {
+  //   scrollRef.current.scrollTo(0, 0)
+  // })
+
+  return <div className="flex">HI</div>
 }
 
 export default Home

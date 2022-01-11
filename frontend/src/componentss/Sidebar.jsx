@@ -14,6 +14,7 @@ const Sidebar = ({ closeToggle, user }) => {
   const handleCloseSidebar = () => {
     if (closeToggle) closeToggle(false)
   }
+
   return (
     <div className="flex flex-col justify-between bg-white h-full overflow-y-scroll min-w-210 hide-scrollbar">
       <div className="flex flex-col">
@@ -57,7 +58,6 @@ const Sidebar = ({ closeToggle, user }) => {
           ))}
         </div>
       </div>
-
       {user && (
         <Link
           to={`user-profile/${user._id}`}
