@@ -1,11 +1,11 @@
 {
   "root": true,
-  "project": {
-    "name": "photo-bucket"
-  },
   "api": {
     "projectId": "lag3btga",
     "dataset": "production"
+  },
+  "project": {
+    "name": "photo-bucket"
   },
   "plugins": [
     "@sanity/base",
