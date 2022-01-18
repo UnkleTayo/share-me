@@ -1,11 +1,11 @@
 {
   "root": true,
-  "api": {
-    "projectId": "lag3btga",
-    "dataset": "production"
-  },
   "project": {
-    "name": "photo-bucket"
+    "name": "share-me"
+  },
+  "api": {
+    "projectId": "87wqh309",
+    "dataset": "production"
   },
   "plugins": [
     "@sanity/base",
