@@ -1,15 +1,16 @@
+import React from 'react'
 import GoogleLogin from 'react-google-login'
-
+import { useNavigate } from 'react-router-dom'
 import { FcGoogle } from 'react-icons/fc'
 import shareVideo from '../assets/share.mp4'
 import logo from '../assets/logowhite.png'
-import { useNavigate } from 'react-router-dom'
 
 import { client } from '../client'
 
 const Login = () => {
   const navigate = useNavigate()
   const responseGoogle = (response) => {
+    console.log(response)
     localStorage.setItem('user', JSON.stringify(response.profileObj))
     const { name, googleId, imageUrl } = response.profileObj
     const doc = {
@@ -24,8 +25,8 @@ const Login = () => {
   }
 
   return (
-    <div className="flex justify-start items-center flex-col h-screen">
-      <div className="relative w-full h-full">
+    <div className="">
+      <div className=" relative w-full h-full">
         <video
           src={shareVideo}
           type="video/mp4"
