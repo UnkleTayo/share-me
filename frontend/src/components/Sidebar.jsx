@@ -1,7 +1,7 @@
 import React from 'react'
 import { NavLink, Link } from 'react-router-dom'
-import { RiHomeFill } from 'react-icons/ri'
-import { IoIosArrowForward } from 'react-icons/io'
+import { FiHome } from 'react-icons/fi'
+import { FiChevronRight } from 'react-icons/fi'
 import logo from '../assets/logo.png'
 import { categories } from '../utils/data'
 
@@ -32,7 +32,7 @@ const Sidebar = ({ closeToggle, user }) => {
             }
             onClick={handleCloseSidebar}
           >
-            <RiHomeFill />
+            <FiHome />
             Home
           </NavLink>
           <h3 className="mt-2 px-5 text-base 2xl:text-xl">
@@ -70,7 +70,7 @@ const Sidebar = ({ closeToggle, user }) => {
             alt="user-profile"
           />
           <p>{user.userName}</p>
-          <IoIosArrowForward />
+          <FiChevronRight />
         </Link>
       )}
     </div>
